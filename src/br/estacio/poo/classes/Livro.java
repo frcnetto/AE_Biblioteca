@@ -6,13 +6,13 @@ public class Livro {
     private String autor;            
     private String ISBN;              
     private int numPaginas;        
-    private float valorCompra;
+    private String valorCompra;
     
     public Livro(){
     
     }
 
-    public Livro(int codigo, String titulo, String autor, String ISBN, int numPaginas, float valorCompra) {
+    public Livro(int codigo, String titulo, String autor, String ISBN, int numPaginas, String valorCompra) {
         this.codigo = codigo;
         this.titulo = titulo;
         this.autor = autor;
@@ -61,11 +61,11 @@ public class Livro {
         this.numPaginas = numPaginas;
     }
 
-    public float getValorCompra() {
+    public String getValorCompra() {
         return valorCompra;
     }
 
-    public void setValorCompra(float valorCompra) {
+    public void setValorCompra(String valorCompra) {
         this.valorCompra = valorCompra;
     }
 }
